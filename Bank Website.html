@@ -5,44 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odyssey Online Banking</title>
     <style>
-        
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             overflow-x: auto; /* Hide horizontal overflow initially */
         }
+
         /* CSS for the navigation bar */
-    .navbar {
-        background-color: #acc3cb;
-        position: fixed; /* Fixed position at the bottom */
-        bottom: 0; /* Bottom of the screen */
-        left: 0;
-        width: 100%;
-        z-index: 1000; /* Ensure the navbar stays on top of other content */
-        display: flex; /* Use flexbox */
-        justify-content: space-between; /* Align items to the start and end of the container */
-        align-items: center; /* Center vertically */
-        padding: 10px; /* Add padding for better spacing */
-    }
+        .navbar {
+            background-color: #acc3cb;
+            position: fixed; /* Fixed position at the bottom */
+            bottom: 0; /* Bottom of the screen */
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the navbar stays on top of other content */
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center vertically */
+            padding: 10px; /* Add padding for better spacing */
+        }
 
         .navbar .logo {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center vertically */
-}
-
+            margin-right: auto; /* Pushes the logo to the left */
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center vertically */
+        }
 
         .navbar .logo img {
-        width: 127px;
-        height: auto;
-        vertical-align: middle;
-    }
-
+            width: 127px;
+            height: auto;
+            vertical-align: middle;
+        }
 
         .navbar .logo h1 {
             margin: 0;
             color: white;
             font-family: Arial, sans-serif; 
-         
         }
 
         .navbar a {
@@ -57,31 +54,17 @@
             background-color: #ffffff;
             color: black;
         }
-
-        /* Offset content to account for fixed navbar */
-        .content {
-            padding-bottom: 80px; /* Adjusted to account for increased height due to centered elements */
-            padding-top: 20px;
-            overflow-x: auto; /* Enable horizontal scrolling */
-        }
-
-     
     </style>
 </head>
 <body>
-    <!-- Content -->
-    <div class="content">
-        <h2>Content Area</h2>
-        <p></p>
-    </div>
-
-    <!-- Navigation bar with logo -->
+    <!-- Navigation bar -->
     <div class="navbar">
-        <!-- Placeholder for the logo -->
+        <!-- Logo -->
         <div class="logo">
-            <!-- Replace 'logo.jpg' with your actual logo -->
-            <img src="logo.jpg" alt="Logo" style="width:127px; height: auto;"><h1> Odyssey</h1>
+            <img src="logo.jpg" alt="Logo" style="width:127px; height: auto;">
+            <h1> Odyssey</h1>
         </div>
+        
         <!-- Links -->
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -90,4 +73,3 @@
     </div>
 </body>
 </html>
-
