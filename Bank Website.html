@@ -9,38 +9,39 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            overflow-x: hidden; /* Hide horizontal overflow initially */
+            overflow-x: auto; /* Hide horizontal overflow initially */
         }
-
-        .navbar {
-            background-color: #acc3cb;
-            position: fixed; /* Fixed position at the top */
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000; /* Ensure the navbar stays on top of other content */
-            white-space: nowrap; /* Prevent button wrapping */
-            overflow-x: auto; /* Enable horizontal scrolling */
-        }
+    .navbar {
+        background-color: #acc3cb;
+        position: fixed; /* Fixed position at the bottom */
+        bottom: 0; /* Bottom of the screen */
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure the navbar stays on top of other content */
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Align items to the start and end of the container */
+        align-items: center; /* Center vertically */
+        padding: 10px; /* Add padding for better spacing */
+    }
 
         .navbar .logo {
-            display: inline-block;
-            vertical-align: middle;
-            padding: 10px;
-        }
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+}
+
 
         .navbar .logo img {
-            width: 127px;
-            height: auto;
-            vertical-align: middle;
-        }
+        width: 127px;
+        height: auto;
+        vertical-align: middle;
+    }
+
 
         .navbar .logo h1 {
             margin: 0;
-            display: inline-block;
-            vertical-align: middle;
             color: white;
-            font: greek freak;
+            font-family: Arial, sans-serif; 
+         
         }
 
         .navbar a {
@@ -58,13 +59,21 @@
 
         /* Offset content to account for fixed navbar */
         .content {
-            padding-top: 60px; /* Adjust this value to match the height of your navbar */
-            padding-bottom: 20px;
+            padding-bottom: 80px; /* Adjusted to account for increased height due to centered elements */
+            padding-top: 20px;
             overflow-x: auto; /* Enable horizontal scrolling */
         }
+
+     
     </style>
 </head>
 <body>
+    <!-- Content -->
+    <div class="content">
+        <h2>Content Area</h2>
+        <p></p>
+    </div>
+
     <!-- Navigation bar with logo -->
     <div class="navbar">
         <!-- Placeholder for the logo -->
@@ -78,12 +87,6 @@
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </div>
-
-    <!-- Content -->
-    <div class="content">
-        <h2>Content Area</h2>
-        <p>This is a basic HTML structure with a CSS navigation bar.</p>
-        <!-- Add more content here as needed -->
-    </div>
 </body>
 </html>
+
