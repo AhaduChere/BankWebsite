@@ -8,8 +8,9 @@
 
 body {
 margin: 0;
-font-family: Arial, sans-serif;
-background-color: #648b9b
+letter-spacing: 2px;
+background: linear-gradient(to bottom, #acc3cb 8%, #557785 90%);
+margin-bottom:550px;
 }
 
         /* CSS for the navigation bar */
@@ -25,6 +26,7 @@ margin-right: auto;
 display: flex;
 align-items: center;
 height: 64px;
+justify-content: center;
 }
 
         /* company name */
@@ -32,19 +34,22 @@ height: 64px;
 margin: 0;
 color: white;
 font-family: Arial, sans-serif;
+margin-left: 10px;
 }
 
         /* buttons */
 .navbar a {
 display: inline-block;
+text-transform: uppercase;
 color: white;
 text-align: center;
 padding: 14px 20px;
 text-decoration: none;
 }
-/*card style*/
+
+/*login card style*/
 .login {
-color: #648b9b;
+color: #557785;
 text-transform: uppercase;
 letter-spacing: 2px;
 display: block;
@@ -54,24 +59,29 @@ font-size: x-large;
 
 /*card background*/
 .card {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 350px;
-width: 300px;
-flex-direction:column;
-gap: 50px;
-background: #e3e3e3;
-border-radius: 18px;
-margin: 0 auto; /* Center the card horizontally */
-margin-top: 50px; /* Adjust the top margin as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 50px;
+    background: #e3e3e3;
+    border-radius: 18px;
+    margin: 0 auto; 
+    margin-top: 50px; 
+    /* Bevel effect */
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(360deg, #b6b6b6, #e3e3e3);
 }
 
 /*username and password box*/
 .inputBox {
   position: relative;
   width: 250px;
-  border: 2px solid #000;
+  border: 2px solid #557785;
   border-radius: 8px;
 }
 
@@ -81,7 +91,7 @@ margin-top: 50px; /* Adjust the top margin as needed */
   padding: 10px;
   outline: none;
   border: none;
-  color: #000;
+  color: #557785;
   font-size: 1em;
   background: transparent;
   transition: 0.1s;
@@ -94,26 +104,24 @@ margin-top: 50px; /* Adjust the top margin as needed */
   position: absolute;
   left: -9px; 
   bottom: 00px; 
-  transform: translateY(-4px);
   margin-left: 10px;
   padding: 10px;
   pointer-events: none;
   font-size: 12px;
-  color: #000;
+  color: #557785;
   transition: 0.5s;
   letter-spacing: 1px;
 }
 
-/*animation*/
+/*animation when typing or has text*/
 .inputBox input:valid~span,
 .inputBox input:focus~span {
   transform:  translateY(-46px);
   font-size: 0.8em;
-  padding: 5px 10px;
-  background: #000;
-  letter-spacing: 0.2em;
-  color: #fff;
-  border: 2px;
+  padding: 8px 10px;
+  background: #557785;
+  color: white;
+  border: 1px;
   border-radius: 6px;
 }
 
@@ -122,7 +130,7 @@ margin-top: 50px; /* Adjust the top margin as needed */
   height: 45px;
   width: 100px;
   border-radius: 5px;
-  border: 2px solid #000;
+  border: 2px solid #557785;
   cursor: pointer;
   background-color: transparent;
   transition: 0.5s;
@@ -130,13 +138,13 @@ margin-top: 50px; /* Adjust the top margin as needed */
   font-size: 10px;
   letter-spacing: 2px;
   margin-bottom: 1em;
+  color: #557785;
 }
 /*enter box hover*/
 .enter:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: #557785;
   color: white;
 }
-
 
     </style>
 </head>
@@ -159,10 +167,10 @@ margin-top: 50px; /* Adjust the top margin as needed */
     <!-- Container for the login form -->
     <div class="container">
         <div class="card">
-            <a class="login">Log in</a>
+          <a class="login">Log in</a>
             <div class="inputBox">
                 <input type="text" required="required">
-                <span class="user">Account #</span>
+                <span class="user">Username</span>
             </div>
 
             <div class="inputBox">
@@ -173,5 +181,6 @@ margin-top: 50px; /* Adjust the top margin as needed */
             <button class="enter">Enter</button>
         </div>
     </div>
+
 </body>
 </html>
