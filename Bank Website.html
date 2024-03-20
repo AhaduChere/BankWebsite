@@ -8,9 +8,8 @@
 
 body {
 margin: 0;
-letter-spacing: 2px;
 background: linear-gradient(to bottom, #acc3cb 8%, #557785 90%);
-margin-bottom:550px;
+margin-bottom:750px;
 }
 
         /* CSS for the navigation bar */
@@ -23,6 +22,7 @@ padding: 10px;
 
 .navbar .logo {
 margin-right: auto;
+margin-top: 30px;
 display: flex;
 align-items: center;
 height: 64px;
@@ -47,104 +47,174 @@ padding: 14px 20px;
 text-decoration: none;
 }
 
-/*login card style*/
-.login {
-color: #557785;
+/*Login Form*/
+.wrapper {
+    width: 420px;
+    background:#0e274962;
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-left:36%;
+    margin-top:2%;
+   box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+}
+
+.form-login {
+font-size: 36px;
+text-align: center;
 text-transform: uppercase;
-letter-spacing: 2px;
-display: block;
-font-weight: bold;
-font-size: x-large;
 }
 
-/*card background*/
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 350px;
-    width: 300px;
-    flex-direction: column;
-    gap: 50px;
-    background: #e3e3e3;
-    border-radius: 18px;
-    margin: 0 auto; 
-    margin-top: 50px; 
-    /* Bevel effect */
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 10px;
-    border-image-source: linear-gradient(360deg, #b6b6b6, #e3e3e3);
+.wrapper .input-box {
+position: relative;
+width: 80%;
+margin: 30px 10px;
 }
 
-/*username and password box*/
-.inputBox {
-  position: relative;
-  width: 250px;
-  border: 2px solid #557785;
-  border-radius: 8px;
+.input-box input {
+width: 100%;
+height: 100%;
+background: transparent;
+border: none;
+outline: none;
+border: 2px solid rgba(255, 255, 255, 0.2);
+border-radius: 40px;
+font-size: 16px;
+color: #fff;
+padding: 20px 45px 20px 20px;
 }
 
-/*inside password and username box*/
-.inputBox input {
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  border: none;
-  color: #557785;
-  font-size: 1em;
-  background: transparent;
-  transition: 0.1s;
-  border-bottom-left-radius: 8px;
+.input-box input::placeholder {
+color: #fff;
 }
 
-/*text inside password and username box*/
-.inputBox span {
-  margin-top: 5px;
-  position: absolute;
-  left: -9px; 
-  bottom: 00px; 
-  margin-left: 10px;
-  padding: 10px;
-  pointer-events: none;
-  font-size: 12px;
-  color: #557785;
-  transition: 0.5s;
-  letter-spacing: 1px;
+.wrapper .remember{
+display: flex;
+justify-content: space-between;
+font-size: 14.5px;
 }
 
-/*animation when typing or has text*/
-.inputBox input:valid~span,
-.inputBox input:focus~span {
-  transform:  translateY(-46px);
-  font-size: 0.8em;
-  padding: 8px 10px;
-  background: #557785;
-  color: white;
-  border: 1px;
-  border-radius: 6px;
+.remember-forgot label input {
+accent-color: #fff;
+margin-right: 3px;
 }
 
-/*enter box*/
-.enter {
+
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+
+.wrapper .btn {
+  width: 150px;
   height: 45px;
-  width: 100px;
-  border-radius: 5px;
-  border: 2px solid #557785;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: transparent;
-  transition: 0.5s;
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 2px;
-  margin-bottom: 1em;
-  color: #557785;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-left: 135px;
+  margin-top: 10px;
 }
-/*enter box hover*/
-.enter:hover {
-  background-color: #557785;
-  color: white;
+
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
 }
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/*Remember button*/
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 8px;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: #4783bb;
+  border-color: #4783bb;
+  animation: wave-46 0.4s ease;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
 
     </style>
 </head>
@@ -153,8 +223,7 @@ font-size: x-large;
     <div class="navbar">
         <!-- Logo -->
         <div class="logo">
-            <img src="logo.jpg" alt="Logo" style="width:127px; height: auto;">
-            <h1> Odyssey</h1>
+            <img src="logo.jpg" alt="Logo" style="width:427px; height: auto;">
         </div>
 
         <!-- Links -->
@@ -164,23 +233,37 @@ font-size: x-large;
         <a href="#contact">Contact</a>
     </div>
 
-    <!-- Container for the login form -->
-    <div class="container">
-        <div class="card">
-          <a class="login">Log in</a>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <span class="user">Username</span>
-            </div>
+    <div class="wrapper">
+      <form action="">    
+       <p class="form-login">Login</p>
 
-            <div class="inputBox">
-                <input type="password" required="required">
-                <span>Password</span>
-            </div>
-
-            <button class="enter">Enter</button>
+        <div class="input-box">
+          <input required="" placeholder="Username" type="text" />
         </div>
-    </div>
 
+        <div class="input-box">
+          <input required="" placeholder="Password" type="password" />
+        </div>
+
+        <div class="checkbox-wrapper-46">
+          <input type="checkbox" id="cbx-46" class="inp-cbx" />
+          <label for="cbx-46" class="cbx"
+            ><span>
+              <svg viewBox="0 0 12 10" height="10px" width="12px">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+            ><span>Remember Me</span>
+          </label>
+        </div>
+        
+
+        <button class="btn" type="submit">Login</button>
+        <div class="register-link">
+          <p><a href="#">Forgot Password</a></p>
+          <p><a href="#">Enroll in Online Banking</a></p>
+        </div>
+      </form>
+    </div>
+    
+   
 </body>
 </html>
