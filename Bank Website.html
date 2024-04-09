@@ -7,50 +7,23 @@
     <style>
 
 body {
-background: linear-gradient(to bottom, #006494 8%, #03045e 85%);
+  background: linear-gradient(to bottom, #085467 15%, #afa788 70%, #f4c083 100%);
 margin-bottom:95px;
-}
-
-
-        /* CSS for the navigation bar */
-.navbar {
-margin-right: auto;
-margin-top: 30px;
-display: flex;
-align-items: center;
-height: 64px;
-justify-content: right;
-}
-
-        /* company name */
-.navbar .logo h1 {
-margin: 0;
-color: white;
-font-family: Arial, sans-serif;
-margin-left: 10px;
-}
-
-        /* buttons */
-.navbar a {
-display: inline-block;
-text-transform: uppercase;
-color: white;
-text-align: center;
-padding: 14px 20px;
-text-decoration: none;
 }
 
 /*Login Form*/
 .wrapper {
-width: 420px;
-background-color: rgba(0, 0, 0, 0.253);
-color: #fff;
-border-radius: 12px;
-padding: 30px 40px;
-margin-left:36%;
-margin-top:2%;
-box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+  width: 420px;
+  background-color: #097a966c;
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  margin: 2% auto 0; /* Updated margin to position near the top and center horizontally */
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+  display: flex; /* Added */
+  justify-content: center; /* Added */
 }
+
 
 .form-login {
 font-size: 36px;
@@ -213,51 +186,39 @@ margin-right: 3px;
     </style>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <div class="navbar">
-     
-      
+  <div class="wrapper">
+      <form action="">
+          <div class="logo">
+              <img src="Logo.png" alt="Logo" style="width:427px; height: auto;">
+          </div>
 
-        <!-- Links -->
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </div>
+          <div class="input-box">
+              <input required="" placeholder="Username" type="text" />
+          </div>
 
-    <div class="wrapper">
-      <form action="">    
-        <div class="logo">
-          <img src="Logo.png" alt="Logo" style="width:427px; height: auto;">
-      </div>
+          <div class="input-box">
+              <input required="" placeholder="Password" type="password" />
+          </div>
 
-        <div class="input-box">
-          <input required="" placeholder="Username" type="text" />
-        </div>
+          <div class="checkbox-wrapper-46">
+              <input type="checkbox" id="cbx-46" class="inp-cbx" />
+              <label for="cbx-46" class="cbx">
+                  <span>
+                      <svg viewBox="0 0 12 10" height="10px" width="12px">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </svg>
+                  </span>
+                  <span>Remember Me</span>
+              </label>
+          </div>
 
-        <div class="input-box">
-          <input required="" placeholder="Password" type="password" />
-        </div>
-
-        <div class="checkbox-wrapper-46">
-          <input type="checkbox" id="cbx-46" class="inp-cbx" />
-          <label for="cbx-46" class="cbx"
-            ><span>
-              <svg viewBox="0 0 12 10" height="10px" width="12px">
-                <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
-            ><span>Remember Me</span>
-          </label>
-        </div>
-        
-
-        <button class="btn" type="submit">Login</button>
-        <div class="register-link">
-          <p><a href="#">Forgot Password</a></p>
-          <p><a href="#">Enroll in Online Banking</a></p>
-        </div>
+          <button class="btn" type="submit">Login</button>
+          <div class="register-link">
+              <p><a href="#">Forgot Password</a></p>
+              <p><a href="#">Enroll in Online Banking</a></p>
+          </div>
       </form>
-    </div>
-    
-   
+  </div>
 </body>
+</html>
 </html>
