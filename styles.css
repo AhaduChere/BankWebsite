@@ -1,0 +1,171 @@
+
+/*Login Form*/
+.wrapper {
+    width: 450px;
+    background-color: #097a966c;
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 2% auto 0; /* Updated margin to position near the top and center horizontally */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+  }
+  
+  
+  .form-login {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  
+  .wrapper .input-box {
+  position: relative;
+  width: 80%;
+  margin: 30px 10px;
+  }
+  
+  .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  }
+  
+  .input-box input::placeholder {
+  color: #fff;
+  }
+  
+  .wrapper .remember{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  }
+  
+  .remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+  }
+  
+  
+  
+  .remember-forgot a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .wrapper .btn {
+    width: 150px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-left: 135px;
+    margin-top: 10px;
+  }
+  
+  
+  .wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  }
+  
+  .register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .register-link p a:hover {
+    text-decoration: underline;
+  }
+  
+  /*Remember button*/
+  .checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+    
+  }
+  
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #006091;
+    border-color: #006091;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
