@@ -1,4 +1,8 @@
-
+body {
+  background: linear-gradient(to bottom, #085467 15%, #afa788 70%, #f4c083 100%);
+  margin-bottom:95px;
+  min-height: 85.9vh;
+}
 /*Login Form*/
 .wrapper {
     width: 450px;
@@ -120,7 +124,7 @@
     border-radius: 3px;
     transform: scale(1);
     vertical-align: middle;
-    border: 1px solid #9098a9;
+    border: 1px solid #ffffff;
     transition: all 0.2s ease;
   }
   .checkbox-wrapper-46 .cbx span:first-child svg {
@@ -170,3 +174,17 @@
       transform: scale(0.9);
     }
   }
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('CAESAR.TTF') format('truetype'); 
+}
+
+ .LName {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            font-family: 'CustomFont', sans-serif; 
+            font-weight: bold;
+            margin-top: -120px;
+        }
+       
