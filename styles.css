@@ -44,7 +44,9 @@ body {
   }
   
   .input-box input::placeholder {
-  color: #fff;
+  color: #c5c5c5;
+  font-family:'Times New Roman', Times, serif;
+  letter-spacing: 3px;
   }
   
   .wrapper .remember{
@@ -52,18 +54,6 @@ body {
   justify-content: space-between;
   font-size: 14.5px;
   }
-  
-  .remember-forgot label input {
-  accent-color: #fff;
-  margin-right: 3px;
-  }
-  
-  
-  
-  .remember-forgot a:hover {
-    text-decoration: underline;
-  }
-  
   
   .wrapper .btn {
     width: 150px;
@@ -176,7 +166,7 @@ body {
     }
   }
   @font-face {
-    font-family: 'CustomFont';
+    font-family: 'Caeser';
     src: url('CAESAR.TTF') format('truetype'); 
 }
 
@@ -184,7 +174,7 @@ body {
             text-align: center;
             color: black;
             font-size: 50px;
-            font-family: 'CustomFont', sans-serif; 
+            font-family: 'Caeser', sans-serif; 
             font-weight: bold;
             margin-top: -120px;
         }
