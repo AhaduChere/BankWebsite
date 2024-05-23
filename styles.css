@@ -11,7 +11,18 @@
     justify-content: center; /* Added */
   }
   
-  
+  @media (min-width: 1000px) {
+    /* CSS rules for screens with a minimum width of 1000px */
+    /* Adjust width, margins, or other styles as needed */
+  }
+  @media screen and (max-width: 410px) {
+    /* CSS rules for screens with a maximum width of 410px */
+    /* Hide elements, adjust padding, or other styles as needed */
+  }
+  @media screen and (max-width: 360px) {
+    /* CSS rules for screens with a maximum width of 360px */
+    /* Adjust margins, padding, or other styles as needed */
+  }
   .form-login {
   font-size: 36px;
   text-align: center;
