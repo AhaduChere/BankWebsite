@@ -1,7 +1,6 @@
 /*Login Form*/
 .wrapper {
     width: 100%;
-    max-width: 450px;
     background-color: #097a966c;
     color: #fff;
     border-radius: 12px;
@@ -12,14 +11,14 @@
     justify-content: center; 
   }
   
-  @media (min-width: 1000px) {
+  @media (min-width: 769px) and (max-width: 1000px) {
     .wrapper {
-    max-width: 450px;
-   }
+      max-width: 450px;
+    }
   }
-  @media (min-width: 400px) {
+  @media (max-width: 450px) {
     .wrapper {
-    max-width: 350px;
+    max-width: 400px;
    }
   }
 
