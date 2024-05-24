@@ -12,6 +12,16 @@
     justify-content: center; 
   }
   
+  @media (min-width: 1000px) {
+    .wrapper {
+    max-width: 450px;
+   }
+  }
+  @media (min-width: 400px) {
+    .wrapper {
+    max-width: 350px;
+   }
+  }
 
   .form-login {
   font-size: 36px;
