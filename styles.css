@@ -1,6 +1,7 @@
 /*Login Form*/
 .wrapper {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     background-color: #097a966c;
     color: #fff;
     border-radius: 12px;
