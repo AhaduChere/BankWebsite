@@ -1,16 +1,21 @@
 /*Login Form*/
 .wrapper {
-    width: 450px;
+    max-width:450px ;
     background-color: #097a966c;
     color: #fff;
     border-radius: 12px;
     padding: 30px 40px;
-    margin: 2% auto 0; /* Updated margin to position near the top and center horizontally */
+    margin: 2% auto 0; 
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
-    display: flex; /* Added */
-    justify-content: center; /* Added */
+    display: flex; 
+    justify-content: center; 
   }
   
+  @media (min-width: 500px) {
+    .wrapper {
+      width: 50%;
+    }
+  }
   .form-login {
   font-size: 36px;
   text-align: center;
