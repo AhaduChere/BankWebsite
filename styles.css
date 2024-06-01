@@ -1,192 +1,295 @@
-/*Login Form*/
-.wrapper {
-    width: 100%;
-    background-color: #097a966c;
-    color: #fff;
-    border-radius: 12px;
-    padding: 30px 40px;
-    margin:auto; 
-    transform: translateY(6%);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
-    display: flex; 
-    justify-content: center; 
-  }
-  @media (min-width: 760px) {
-    .wrapper {
-      max-width: 450px;
-    }
-  }
-  @media (max-width: 759px) {
-    .wrapper {
-    max-width: 400px;
-   }
-  }
-  @media (max-width: 500px) {
-    .wrapper {
-    max-width: 380px;
-   }
-  }
-  @media (max-width: 450px) {
-    .wrapper {
-    max-width: 200px;
-   }
-  }
- 
 
-  .form-login {
-  font-size: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  }
-  
-  .wrapper .input-box {
+ 
+.wrapper{
   position: relative;
-  width: 80%;
-  margin: 30px 10px;
-  }
-  
-  .input-box input {
   width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: #fff;
-  padding: 20px 45px 20px 20px;
-  }
-  
-  .input-box input::placeholder {
-  color: #c5c5c5;
-  font-family:'Times New Roman', Times, serif;
-  letter-spacing: 3px;
-  }
-  
-  .wrapper .remember{
+  background-color: #097a966c;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  }
-  
-  .wrapper .btn {
-    width: 150px;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-    margin-left: 135px;
-    margin-top: 10px;
-  }
-  
-  
-  .wrapper .forgotandenroll-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin-left: 20px;
-    margin: px 0 15px;
-  }
-  
-  .forgotandenroll-link p a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .forgotandenroll-link p a:hover {
-    text-decoration: underline;
-  }
-  
-  /*Remember button*/
-  .checkbox-wrapper-46 input[type="checkbox"] {
-    display: none;
-    visibility: hidden;
-    
-  }
-  
-  .checkbox-wrapper-46 .cbx {
-    margin: auto;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    margin-left: 15px;
-  }
-  .checkbox-wrapper-46 .cbx span {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translate3d(0, 0, 0);
-  }
-  .checkbox-wrapper-46 .cbx span:first-child {
-    position: relative;
-    width: 18px;
-    height: 18px;
-    border-radius: 3px;
-    transform: scale(1);
-    vertical-align: middle;
-    border: 1px solid #ffffff;
-    transition: all 0.2s ease;
-  }
-  .checkbox-wrapper-46 .cbx span:first-child svg {
-    position: absolute;
-    top: 4px;
-    left: 3px;
-    fill: none;
-    stroke: #ffffff;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 16px;
-    stroke-dashoffset: 16px;
-    transition: all 0.3s ease;
-    transition-delay: 0.1s;
-    transform: translate3d(0, 0, 0);
-  }
-  .checkbox-wrapper-46 .cbx span:first-child:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    display: block;
-    transform: scale(0);
-    opacity: 1;
-    border-radius: 50%;
-  }
-  .checkbox-wrapper-46 .cbx span:last-child {
-    padding-left: 8px;
-  }
-  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
-    background: #006091;
-    border-color: #006091;
-    animation: wave-46 0.4s ease;
-  }
-  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
-    stroke-dashoffset: 0;
-  }
-  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
-    transform: scale(3.5);
-    opacity: 0;
-    transition: all 0.6s ease;
-  }
-  
- 
-  @font-face {
-    font-family: 'Caeser';
-    src: url('CAESAR.TTF') format('truetype'); 
+  border-radius: 12px;
+  padding: 30px 40px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  transition: transform 1s; 
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
+.wrapper.flipped {
+    transform: rotateY(180deg);
+    
+}
+ 
+        @media (min-width: 760px) {
+            .wrapper {
+                max-width: 450px;
+            }
+        }
+        @media (max-width: 759px) {
+            .wrapper {
+                max-width: 400px;
+            }
+        }
+        @media (max-width: 500px) {
+            .wrapper {
+                max-width: 380px;
+            }
+        }
+        @media (max-width: 450px) {
+            .wrapper {
+                max-width: 200px;
+            }
+        }
+        .form-login {
+            font-size: 36px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .wrapper .input-box {
+            position: relative;
+            width: 80%;
+            margin: 30px 10px;
+        }
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder {
+            color: #c5c5c5;
+            font-family:'Times New Roman', Times, serif;
+            letter-spacing: 3px;
+        }
+        .wrapper .remember {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+        }
+        .wrapper .btn {
+            width: 150px;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 10px;
+            
+        }
+        .wrapper .forgotandenroll-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin-left: 20px;
+            margin: px 0 15px;
+        }
+        .forgotandenroll-link p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .forgotandenroll-link p a:hover {
+            text-decoration: underline;
+        }
+        .checkbox-wrapper-46 input[type="checkbox"] {
+            display: none;
+            visibility: hidden;
+         }
+        .checkbox-wrapper-46 .cbx {
+            margin: auto;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            margin-left: -270px;
+            color: #fff;
+        }
+        .checkbox-wrapper-46 .cbx span {
+            display: inline-block;
+            vertical-align: middle;
+            transform: translate3d(0, 0, 0);
+           
+        }
+        .checkbox-wrapper-46 .cbx span:first-child {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            transform: scale(1);
+            vertical-align: middle;
+            border: 1px solid #ffffff;
+            transition: all 0.2s ease;
+            
+        }
+        .checkbox-wrapper-46 .cbx span:first-child svg {
+            position: absolute;
+            top: 4px;
+            left: 3px;
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 16px;
+            stroke-dashoffset: 16px;
+            transition: all 0.3s ease;
+            transition-delay: 0.1s;
+            transform: translate3d(0, 0, 0);
+            
+        }
+        .checkbox-wrapper-46 .cbx span:first-child:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: block;
+            transform: scale(0);
+            opacity: 1;
+            border-radius: 50%;
+        }
+        .checkbox-wrapper-46 .cbx span:last-child {
+            padding-left: 8px;
+        }
+        .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+            background: #006091;
+            border-color: #006091;
+            animation: wave-46 0.4s ease;
+        }
+        .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+            stroke-dashoffset: 0;
+        }
+        .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+            transform: scale(3.5);
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
 
- .LName {
+
+        @font-face {
+            font-family: 'Caeser';
+            src: url('CAESAR.TTF') format('truetype'); 
+        }
+        .LName {
             text-align: center;
             color: black;
             font-size: 50px;
             font-family: 'Caeser', sans-serif; 
             font-weight: bold;
             margin-top: -120px;
-        }
+        }     
 
+.wrapper2 {
+    position: relative;
+    width: 100%;
+    max-height: 668.92px;
+    background-color: #097a966c;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.wrapper2.flipped {
+    transform: rotateY(-0deg); 
+}
+
+   
+          @media (min-width: 760px) {
+              .wrapper2 {
+                  max-width: 450px;
+              }
+          }
+          @media (max-width: 759px) {
+              .wrapper2 {
+                  max-width: 400px;
+              }
+          }
+          @media (max-width: 500px) {
+              .wrapper2 {
+                  max-width: 380px;
+              }
+          }
+          @media (max-width: 450px) {
+              .wrapper2 {
+                  max-width: 200px;
+              }
+          }
+          .form-login {
+              font-size: 36px;
+              text-align: center;
+              text-transform: uppercase;
+          }
+          .wrapper2 .input-box {
+              position: relative;
+              width: 80%;
+              margin: 20px 10px;
+          }
+          .input-box input {
+              width: 100%;
+              height: 100%;
+              background: transparent;
+              border: none;
+              outline: none;
+              border: 2px solid rgba(255, 255, 255, 0.2);
+              border-radius: 40px;
+              font-size: 16px;
+              color: #fff;
+              padding: 20px 45px 20px 20px;
+          }
+          .input-box input::placeholder {
+              color: #c5c5c5;
+              font-family:'Times New Roman', Times, serif;
+              letter-spacing: 3px;
+          }
+     
+          .wrapper2 .btn {
+              width: 150px;
+              height: 45px;
+              background: #fff;
+              border: none;
+              outline: none;
+              border-radius: 40px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              cursor: pointer;
+              font-size: 16px;
+              color: #333;
+              font-weight: 600;
+              margin-left: 20px;
+              margin-top: 10px;
+              
+          }
+          .wrapper2 .forgotandenroll-link {
+              font-size: 14.5px;
+              text-align: center;
+              margin-left: 20px;
+              margin: px 0 15px;
+          }
+          .forgotandenroll-link p a {
+              color: #fff;
+              text-decoration: none;
+              font-weight: 600;
+          }
+          .forgotandenroll-link p a:hover {
+              text-decoration: underline;
+          }
+        
+.wrapper, .wrapper2 {
+    position: absolute;
+  }
